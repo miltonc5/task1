@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Js Task-1</title>
+		<link rel="stylesheet" type="text/css" href="mil.css"/>
+		
+		<script src="milt.js">
+
+		</script>
+
+	</head>
+	
+	<body>
+		<div id="wrapper" class="container clearfix">
+		
+		<div id="myheading" class="header">
+			<img src="images/images.jpg" />
+			 
+				
+		</div> <!--end of header-->
+		
+		<div id="dnav">
+		<ul id="sddm">
+    <li><a class="milt" href="">Home</a></li>
+	<li><a href="">Overview</a></li>
+	<li><a href="#">Templates</a>
+		
+	</li>
+    <li><a href="#" 
+        onmouseover="milton1('m1')" 
+        onmouseout="mclosetime()">Loan Method</a>
+        <ul id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+			<a href="#">Online Office Loan</a>
+			<a href="#">Plans and Pricing</a>
+        </ul>
+    </li>
+    <li><a href="#" onmouseover="milton1('m2')" onmouseout="mclosetime()">Applications</a>
+		 <ul id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+			<a href="#">Online Applications</a>
+			<a href="#">Frequent Questions</a>
+			<a href="#">Free Trial</a>
+        </ul>
+	</li>
+    <li><a href="#" onmouseover="milton1('m3')" onmouseout="mclosetime()">E-Marketing</a>
+		 <ul id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			<a href="#">Search Engine Optimization</a>
+			<a href="#">E-Marketing Tools</a>
+        </ul>
+	</li>
+    <li><a href="#" onmouseover="milton1('m4')" onmouseout="mclosetime()">Custom Project</a>
+		 <ul id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			<a href="#">Our Advantage</a>
+			<a href="#">Free Analysis</a>
+        </ul>
+	</li>
+    <li><a href="#" onmouseover="milton1('m5')" onmouseout="mclosetime()">About Us</a>
+		<ul id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			<a href="#">Subscribe</a>
+			<a href="#">Profile</a>
+			<a href="#">Categories</a>
+			<a href="#">Submit Apps</a>
+        </ul>
+	</li>
+    <li><a href="#" onmouseover="milton1('m6')" onmouseout="mclosetime()">Media Partners</a>
+		<ul id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">Instagram</a>
+			<a href="#">Linkedin</a>
+        </ul>
+	</li>
+    <li><a href="#" onmouseover="milton1('m7')" onmouseout="mclosetime()">Help</a>
+		<ul id="m7" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			<a href="#">Contact Us</a>
+        </ul>
+	</li>
+</ul>
+		
+</div> <!--end of dropDown navigation bar-->
+
+
+	 <div id="slid"  onload="sliderA()">
+            <img src="images/1.jpg" id="milton"/>
+            <div id="left_holder"><img onclick="slide(-1)" class="left" src="images/left.png"/></div>
+            <div id="right_holder"><img onclick="slide(1)" class="right" src="images/right.png"/></div>
+       </div> <!--end of ImageSlide show-->
+	 
+	   
+	   <div id="loan">
+		
+			<h1>Monthly Payment Calculator</h1>
+			<p>Loan Amount: $<input id="amount" type="number" min="1" max="1000000" onchange="computeLoan()"></p>
+			<p>Interest Rate: <input id="interest_rate" type="number" min="0" max="100" value="10" step=".1" onchange="computeLoan()">%</p>
+			<p>Months: <input id="months" type="number" min="1" max="72" value="1" step="1" onchange="computeLoan()"></p>
+			<h2 id="payment"></h2>
+			
+	   </div> <!--end of javascript payment calculator-->
+	   
+	   
+	   <div id="footer">
+				<a href=""><p>&copy;Milton Ahmed 2015! all rights resserved</p></a>
+				
+				<a id="top" href="#" onclick="return false;" onmousedown="resetScroller('myheading');">Go back to top</a>
+				
+		</div> <!--end of footer-->
+		
+</div> <!--end of wrapper-->
+
+	</body>
+</html>
